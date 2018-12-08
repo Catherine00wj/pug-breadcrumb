@@ -1,0 +1,8 @@
+include ./breadcrumb
+
+html
+  head
+    title= title
+  body
+    +breadcrumbs([{link:'/', label:'home'}, {link:'/course', label:'course'}, {link:'/course/application', label:'application'}])
+    h1= message

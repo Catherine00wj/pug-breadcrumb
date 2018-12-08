@@ -1,0 +1,6 @@
+mixin breadcrumbs(items)
+    .breadcrumb
+        ul.breadcrumb__list&attributes(attributes)
+            each item in items
+                li.breadcrumb__item
+                    a(href=item.link title=item.label).breadcrumb__link= item.label

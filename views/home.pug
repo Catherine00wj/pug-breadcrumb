@@ -1,0 +1,8 @@
+include ./breadcrumb
+
+html
+  head
+    title= title
+  body
+    +breadcrumbs([{link:'/', label:'home'}])
+    h1= message
